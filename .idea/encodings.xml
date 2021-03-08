@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Core/Inc/delay.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Core/Inc/rc522.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Core/Inc/usart - sys.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Core/Src/delay.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Core/Src/led.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Core/Src/rc522.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Core/Src/syscalls.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Core/Src/usart - sys.c" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

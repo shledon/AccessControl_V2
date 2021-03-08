@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="AccessControl_V2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/CLionProjects/AccessControl_V2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AccessControl_V2.elf">
+				<Option output="E:/CLionProjects/AccessControl_V2/cmake-build-debug/AccessControl_V2.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/CLionProjects/AccessControl_V2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xE"/>
+					<Add directory="E:/CLionProjects/AccessControl_V2/Core/Inc"/>
+					<Add directory="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include"/>
+					<Add directory="d:\jetbrains\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1"/>
+					<Add directory="d:\jetbrains\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/arm-none-eabi"/>
+					<Add directory="d:\jetbrains\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/backward"/>
+					<Add directory="d:\jetbrains\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/include"/>
+					<Add directory="d:\jetbrains\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/include-fixed"/>
+					<Add directory="d:\jetbrains\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 AccessControl_V2.elf"/>
+					<CompileFile command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AccessControl_V2.elf/fast">
+				<Option output="E:/CLionProjects/AccessControl_V2/cmake-build-debug/AccessControl_V2.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/CLionProjects/AccessControl_V2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xE"/>
+					<Add directory="E:/CLionProjects/AccessControl_V2/Core/Inc"/>
+					<Add directory="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include"/>
+					<Add directory="d:\jetbrains\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1"/>
+					<Add directory="d:\jetbrains\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/arm-none-eabi"/>
+					<Add directory="d:\jetbrains\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/backward"/>
+					<Add directory="d:\jetbrains\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/include"/>
+					<Add directory="d:\jetbrains\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/include-fixed"/>
+					<Add directory="d:\jetbrains\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 AccessControl_V2.elf/fast"/>
+					<CompileFile command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/CLionProjects/AccessControl_V2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/CLionProjects/AccessControl_V2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/JetBrains/MinGW/bin/mingw32-make.exe -f &quot;E:/CLionProjects/AccessControl_V2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/bmp_pixel.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/delay.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/display.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/english_6x8_pixel.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/gpio.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/lcdlib.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/main.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/mode.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/nokia_5110.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/rc522.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/remote.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/retarget.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/rtc.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/spi.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/stm32f1xx_hal_conf.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/stm32f1xx_it.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/sys.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/usart.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/userinfo.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/w25qxx.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Inc/write_chinese_string_pixel.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/delay.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/display.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/gpio.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/main.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/mode.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/nokia_5110.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/rc522.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/remote.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/retarget.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/rtc.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/spi.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/stm32f1xx_hal_msp.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/stm32f1xx_it.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/sys.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/syscalls.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/system_stm32f1xx.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/usart.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/userinfo.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Core/Src/w25qxx.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc_ex.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/STM32F103RCTx_FLASH.ld">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/startup/startup_stm32f103xe.s">
+			<Option target="AccessControl_V2.elf"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/AccessControl_V2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
