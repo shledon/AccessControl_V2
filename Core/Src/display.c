@@ -92,9 +92,9 @@ u8 show_meanu(u8 ml,char show_char[][15])
     {
         temp[j]=show_char[row+base][j];
     }
-	temp[11]='<';
+    temp[11]=' ';
 	temp[12]=' ';
-	temp[13]=' ';
+    temp[13]='<';
 	LCD_write_english_string(0,row,temp);
 	LCD_write_english_string(0,4,"\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
 	LCD_write_english_string(0,5,"    Meanu");

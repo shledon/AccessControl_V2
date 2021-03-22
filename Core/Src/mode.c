@@ -169,7 +169,7 @@ u8 add_root()
     if(!check_read_same())            //检查这次读取的卡是否与管理员登录读取的卡一样，不一样则往下执行
     {
         //满足卡未存在、管理员还未达到最大数则进行登记
-        if(!check_root_exist() && NUM_ROOT<=NUM_ROOT_MAX)
+        if(!check_root_exist() && NUM_ROOT<=NUM_ROOT_MAX && SN[0]!=0&&SN[1]!=0&&SN[2]!=0&&SN[3]!=0)
         {
             write_root_num();     //将新的管理员卡号写进FLASH和ROOT数组
             LCD_clear();
@@ -184,13 +184,13 @@ u8 add_root()
             delay_ms(1000);
         }
     }
-    else
-    {
-        LCD_clear();
-        printf("Please put a new card!\r\n");
-        LCD_write_english_string(0,1,"Please put a new card!");
-        delay_ms(1000);
-    }
+//    else
+//    {
+//        LCD_clear();
+//        printf("Please put a new card!\r\n");
+//        LCD_write_english_string(0,1,"Put a new card!");
+//        delay_ms(1000);
+//    }
     return 1;
 }
 
@@ -319,6 +319,7 @@ void read_mode()
 {
     u16 i;
     RC522_Handel();   //读卡操作，返回卡号SN[]
+    ShowID(SN);
     for(i=0;i<NUM_USER;i++)//从所有学生信息中检索是否有匹配
     {
         if(student[i].id[0]==SN[0]&&student[i].id[1]==SN[1]&&student[i].id[2]==SN[2]&&student[i].id[3]==SN[3])
@@ -346,7 +347,7 @@ void root_mode()
     u8 i;
     u8 num_flag=1;
     u8 key_val=0;
-    u8 super_root[4]={0x5A,0x4B,0x2F,0x15};
+    u8 super_root[4]={0xE0,0x31,0xAF,0x43};
 
     RC522_Handel();
     if(!get_root)           //还没得到管理员权限，进行管理员登录
@@ -354,6 +355,7 @@ void root_mode()
         if(super_root[0]==SN[0]&&super_root[1]==SN[1]&&super_root[2]==SN[2]&&super_root[3]==SN[3])
         {
             get_super_root=1;
+            get_root=1;
             LCD_clear();
             printf("Successful login\r\n");
             LCD_write_english_string(0,1,"Get Super ROOT!");
@@ -376,17 +378,42 @@ void root_mode()
         while(num_flag)
         {
             key_val=Remote_Scan();
-            if(!key_val)        //任意按键按下退出
+            switch(key_val)
             {
-                num_flag=0;
+
+                case 162:num_flag=0;break;//ch-
+                case 98:num_flag=0;break;//ch
+                case 2:num_flag=0;break;//>>|
+                case 226:num_flag=0;break;//ch+
+                case 194:;break;//>||
+                case 34:num_flag=0;break;//|<<
+                case 224:num_flag=0;break;//-
+                case 168:num_flag=0;break;//+
+                case 144:num_flag=0;break;//EQ
+
+                case 104:num_flag=0;break;//0
+                case 48:num_flag=0;break;//1
+                case 24:num_flag=0;break;//2
+                case 122:num_flag=0;break;//3
+                case 16:num_flag=0;break;//4
+                case 56:num_flag=0;break;//5
+                case 90:num_flag=0;break;//6
+                case 66:num_flag=0;break;//7
+                case 74:num_flag=0;break;//8
+                case 82:num_flag=0;break;//9
             }
+//            if(!key_val)        //任意按键按下退出
+//            {
+//                num_flag=0;
+//            }
             LCD_clear();
             LCD_write_english_string(0,0,"ADD ROOT");
-            add_root();
-            LCD_clear();
+//            add_root();
+//            LCD_clear();
             LCD_write_english_string(0,2,"Any  ");
             LCD_write_english_string(0,3,"Key");
             LCD_write_english_string(0,4,"Exit");
+            add_root();
         }
     }
 }
@@ -539,6 +566,7 @@ void meanu_mode(u8* pmode)
     while(num_flag)
     {
         key_val=Remote_Scan();
+        printf("key_val:%d\r\n",key_val);
         switch(key_val)//显示菜单
         {
             case 98:num_flag=0;meanu_row=0;break;//ch	   取消键

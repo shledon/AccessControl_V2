@@ -11,7 +11,7 @@ void Remote_Init(void)
     TIM4_Handler.Instance=TIM4;                          //通用定时器4
     TIM4_Handler.Init.Prescaler=(72-1);                	 //预分频器,1M的计数频率,1us加1.
     TIM4_Handler.Init.CounterMode=TIM_COUNTERMODE_UP;    //向上计数器
-    TIM4_Handler.Init.Period=10000;                      //自动装载值
+    TIM4_Handler.Init.Period=10000;                      //自动装载值  最大10ms溢出
     TIM4_Handler.Init.ClockDivision=TIM_CLOCKDIVISION_DIV1;
     HAL_TIM_IC_Init(&TIM4_Handler);
     
@@ -35,7 +35,7 @@ void HAL_TIM_IC_MspInit(TIM_HandleTypeDef *htim)
     __HAL_RCC_GPIOB_CLK_ENABLE();			//开启GPIOB时钟
 	
     GPIO_Initure.Pin=GPIO_PIN_9;            //PB9
-    GPIO_Initure.Mode=GPIO_MODE_AF_INPUT;  	//复用输入
+    GPIO_Initure.Mode=GPIO_MODE_INPUT;  	//输入模式
     GPIO_Initure.Pull=GPIO_PULLUP;          //上拉
     GPIO_Initure.Speed=GPIO_SPEED_FREQ_HIGH;//高速
     HAL_GPIO_Init(GPIOB,&GPIO_Initure);
@@ -112,9 +112,10 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)//捕获中断发生时执行
 					}else if(Dval>2200&&Dval<2600)	//得到按键键值增加的信息 2500为标准值2.5ms
 					{
 						RmtCnt++; 					//按键次数增加1次
-						RmtSta&=0XF0;				//清空计时器		
+						RmtSta&=0XF0;				//清空计时器
 					}
- 				}else if(Dval>4200&&Dval<4700)		//4500为标准值4.5ms
+ 				}
+ 				else if(Dval>4200&&Dval<4700)		//4500为标准值4.5ms
 				{
 					RmtSta|=1<<7;					//标记成功接收到了引导码
 					RmtCnt=0;						//清除按键次数计数器
@@ -130,24 +131,26 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)//捕获中断发生时执行
 //	 0,没有任何按键按下
 //其他,按下的按键键值.
 u8 Remote_Scan(void)
-{        
+{
+
 	u8 sta=0;       
-	u8 t1,t2;  
+	u8 t1,t2;
 	if(RmtSta&(1<<6))//得到一个按键的所有信息了
-	{ 
-	    t1=RmtRec>>24;			//得到地址码
-	    t2=(RmtRec>>16)&0xff;	//得到地址反码 
- 	    if((t1==(u8)~t2)&&t1==REMOTE_ID)//检验遥控识别码(ID)及地址 
-	    { 
-	        t1=RmtRec>>8;
-	        t2=RmtRec; 	
-	        if(t1==(u8)~t2)sta=t1;//键值正确	 
-		}   
-		if((sta==0)||((RmtSta&0X80)==0))//按键数据错误/遥控已经没有按下了
-		{
-		 	RmtSta&=~(1<<6);//清除接收到有效按键标识
-			RmtCnt=0;		//清除按键次数计数器
-		}
-	}  
+        {
+            t1=RmtRec>>24;			//得到地址码
+            t2=(RmtRec>>16)&0xff;	//得到地址反码
+            if((t1==(u8)~t2)&&t1==REMOTE_ID)//检验遥控识别码(ID)及地址
+            {
+                t1=RmtRec>>8;
+                t2=RmtRec;
+                if(t1==(u8)~t2)sta=t1;//键值正确
+            }
+            while((RmtSta&0X80)!=0);//当没有再收到同步码头时跳出循环，用来过滤多余的侦
+            if((sta==0)||((RmtSta&0X80)==0))//按键数据错误/遥控已经没有按下了
+            {
+                RmtSta&=~(1<<6);//清除接收到有效按键标识
+                RmtCnt=0;		//清除按键次数计数器
+            }
+        }
     return sta;
 }

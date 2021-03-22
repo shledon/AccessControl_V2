@@ -14,9 +14,34 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d8e6c07-5935-43de-b468-a3b94e64191e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="9d8e6c07-5935-43de-b468-a3b94e64191e" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/nokia_5110.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/nokia_5110.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f1xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f1xx_hal_conf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/display.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/display.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/mode.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/mode.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/nokia_5110.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/nokia_5110.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/rc522.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/rc522.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/remote.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/remote.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/system_stm32f1xx.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/system_stm32f1xx.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/w25qxx.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/w25qxx.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AccessControl_V2.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AccessControl_V2.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AccessControl_V2.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AccessControl_V2.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AccessControl_V2.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AccessControl_V2.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AccessControl_V2.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AccessControl_V2.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/Core/Src/display.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/Core/Src/display.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/Core/Src/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/Core/Src/mode.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/Core/Src/mode.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/Core/Src/nokia_5110.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/Core/Src/nokia_5110.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/Core/Src/rc522.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/Core/Src/rc522.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/Core/Src/remote.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/Core/Src/remote.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/Core/Src/w25qxx.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/Core/Src/w25qxx.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AccessControl_V2.elf.dir/depend.make" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +104,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -121,23 +141,62 @@
       <workItem from="1614941573638" duration="12199000" />
       <workItem from="1614997653013" duration="14755000" />
       <workItem from="1615026914411" duration="4014000" />
-      <workItem from="1615467020890" duration="356000" />
+      <workItem from="1615467020890" duration="721000" />
+      <workItem from="1615622075054" duration="1218000" />
+      <workItem from="1616142580469" duration="24347000" />
+      <workItem from="1616295999704" duration="7331000" />
     </task>
+    <task id="LOCAL-00001" summary="Default Changelist">
+      <created>1615467447882</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615467447882</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Default Changelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="com.jetbrains.cidr.embedded.openocd.conf.type">
+        <watch expression="W25QXX_CS" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -259,6 +259,7 @@ CMakeFiles/AccessControl_V2.elf.dir/Core/Src/nokia_5110.c.obj: ../Drivers/STM32F
 CMakeFiles/AccessControl_V2.elf.dir/Core/Src/nokia_5110.c.obj: ../Core/Src/nokia_5110.c
 
 CMakeFiles/AccessControl_V2.elf.dir/Core/Src/rc522.c.obj: ../Core/Inc/delay.h
+CMakeFiles/AccessControl_V2.elf.dir/Core/Src/rc522.c.obj: ../Core/Inc/display.h
 CMakeFiles/AccessControl_V2.elf.dir/Core/Src/rc522.c.obj: ../Core/Inc/gpio.h
 CMakeFiles/AccessControl_V2.elf.dir/Core/Src/rc522.c.obj: ../Core/Inc/main.h
 CMakeFiles/AccessControl_V2.elf.dir/Core/Src/rc522.c.obj: ../Core/Inc/mode.h

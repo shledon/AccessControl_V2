@@ -23,11 +23,10 @@ void LCD_IO_Init(void)
     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-    HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+    HAL_GPIO_Init(LCD_RST_GPIO_Port, &GPIO_InitStruct);
 
     HAL_GPIO_WritePin(LCD_RST_GPIO_Port, LCD_RST_Pin, GPIO_PIN_SET);
     HAL_GPIO_WritePin(GPIOB, LCD_CE_Pin|LCD_DC_Pin|LCD_DIN_Pin|LCD_CLK_Pin, GPIO_PIN_SET);
-
 }
 
 
@@ -126,45 +125,6 @@ void LCD_write_english_string(unsigned char X,unsigned char Y,char *s)
 	 s++;
       }
   }
-/*-----------------------------------------------------------------------
-LCD_write_chinese_string: 在LCD上显示汉字
-
-输入参数：X、Y    ：显示汉字的起始X、Y坐标；
-          ch_with ：汉字点阵的宽度
-          num     ：显示汉字的个数；  
-          line    ：汉字点阵数组中的起始行数
-          row     ：汉字显示的行间距
-编写日期          ：2004-8-11 
-最后修改日期      ：2004-8-12 
-测试：
-	LCD_write_chi(0,0,12,7,0,0);
-	LCD_write_chi(0,2,12,7,0,0);
-	LCD_write_chi(0,4,12,7,0,0);	
------------------------------------------------------------------------*/                        
-void LCD_write_chinese_string(unsigned char X, unsigned char Y, 
-                   unsigned char ch_with,unsigned char num,
-                   unsigned char line,unsigned char row)
-  {
-    unsigned char i,n;
-    
-    LCD_set_XY(X,Y);                             //设置初始位置
-    
-    for (i=0;i<num;)
-      {
-      	for (n=0; n<ch_with*2; n++)              //写一个汉字
-      	  { 
-      	    if (n==ch_with)                      //写汉字的下半部分
-      	      {
-      	        if (i==0) LCD_set_XY(X,Y+1);
-      	        else
-      	           LCD_set_XY((X+(ch_with+row)*i),Y+1);
-              }
-      	    LCD_write_byte(write_chinese[line+i][n],1);
-      	  }
-      	i++;
-      	LCD_set_XY((X+(ch_with+row)*i),Y);
-      }
-  }
 
 /*-----------------------------------------------------------------------
 LCD_draw_map      : 位图绘制函数
@@ -177,6 +137,14 @@ LCD_draw_map      : 位图绘制函数
 编写日期          ：2004-8-13
 最后修改日期      ：2004-8-13 
 -----------------------------------------------------------------------*/
+/**
+ *
+ * @param x 绘制的起始X、Y坐标；
+ * @param y 绘制的起始X、Y坐标；
+ * @param width
+ * @param height
+ * @param pic 位图点阵数据
+ */
 void LCD_Show_Pic(uint8_t x, uint8_t y, uint8_t width, uint8_t height, uint8_t *pic)
 {
     uint8_t i, j, row;
@@ -191,20 +159,17 @@ void LCD_Show_Pic(uint8_t x, uint8_t y, uint8_t width, uint8_t height, uint8_t *
         LCD_set_XY(x,y+j);
         for(i=0; i<width; i++)
         {
-            LCD_write_byte(*pic,0);
+            LCD_write_byte(*pic,1);
             pic++;
         }
     }
 }
-/*-----------------------------------------------------------------------
-LCD_write_byte    : 使用SPI接口写数据到LCD
 
-输入参数：data    ：写入的数据；
-          command ：写数据/命令选择；
-
-编写日期          ：2004-8-10 
-最后修改日期      ：2004-8-13 
------------------------------------------------------------------------*/
+/**
+ * 使用SPI接口写数据到LCD
+ * @param dat 写入的数据；
+ * @param command 写数据/命令选择；写数据为1，写命令为0；
+ */
 void LCD_write_byte(unsigned char dat, unsigned char command)
 {
     unsigned char i;

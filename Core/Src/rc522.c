@@ -4,6 +4,7 @@
 #include "string.h"
 #include "spi.h"
 #include "mode.h"
+#include "display.h"
 
 unsigned char status;//读取RC522执行状态
 unsigned char CT[2];//读取到的卡类型

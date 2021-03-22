@@ -22,7 +22,7 @@ void W25QXX_Init(void)
     __HAL_RCC_GPIOD_CLK_ENABLE();           //使能GPIOD时钟
     
     //片选脚CS为PD2
-    GPIO_InitStruct.Pin = FLASH_CS_Pin;//PD12
+    GPIO_InitStruct.Pin = FLASH_CS_Pin;//PD2
     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;//推挽输出
     GPIO_InitStruct.Pull = GPIO_PULLUP; //上拉
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;//高速
@@ -47,9 +47,7 @@ void W25QXX_Init(void)
         printf("W25Q128 Check Failed!\r\n");
         delay_ms(500);
     }
-
     printf("W25Q128 Ready!\r\n");
-
 }  
 
 //读取W25QXX的状态寄存器，W25QXX一共有3个状态寄存器
